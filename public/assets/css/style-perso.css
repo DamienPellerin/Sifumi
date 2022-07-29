@@ -8,8 +8,7 @@
 }
 .next{
     position: absolute;
-    padding-left: 90%;
-    
+    padding-left: 90%;    
 }
 
 .title{
@@ -28,6 +27,7 @@ h1{
     text-shadow: 6px 6px rgba(252, 2, 2, 0.849);
     text-align: center;
 }
+
 .content{
     height: 80vh;
     width: 100%;
@@ -50,8 +50,7 @@ h1{
     display: flex;
     align-items: center;
     width: 20%;
-    margin: 10px 0px 10px 20px;
-   
+    margin: 10px 0px 10px 20px;  
 }
 
 .perso1,
@@ -69,8 +68,6 @@ h1{
     border: 2px solid white;
     transition: 0.2s;
     cursor: pointer;
-    
-   
 }
 
  .perso1:hover,
@@ -88,7 +85,6 @@ h1{
     background-image: url("../img/vega.gif");
     background-size: contain;
     background-repeat: no-repeat;
-
 }
 
 .perso2 .left{
@@ -115,14 +111,12 @@ h1{
     background-color: black;
     background-image: url("../img/ken.png");
     background-size: contain;
-    background-repeat: no-repeat;
-    
-    
+    background-repeat: no-repeat;   
 }
+
 .menu:nth-child(1) .perso1 .left {
     background-image: url("../img/vega.gif");
     background-size: cover;
-    
 }
 
 .menu:nth-child(2) .perso2 .left {
@@ -157,8 +151,7 @@ h1{
     left: 20%;
 }
 
-audio {
-    
+audio { 
     position: relative;
     filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
     width: 20%;

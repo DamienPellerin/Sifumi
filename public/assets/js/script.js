@@ -1,12 +1,13 @@
 
 let temps = 100
+
 let timerElement = document.querySelector('.timer')
 function diminuerTemps() {
     timerElement.innerText = temps;
     temps = temps <= -1 ? -1 : temps - 1;
-    if(temps === -1){
-        document.querySelector('.timeOut').classList.add('inTimeOut');
-                document.querySelector('.timeOut').classList.remove('out');
+        if(temps === -1){
+            document.querySelector('.timeOut').classList.add('inTimeOut');
+            document.querySelector('.timeOut').classList.remove('out');
                 setTimeout(() => {
                     document.querySelector('.timeOut').classList.remove('inTimeOut');
                     document.querySelector('.timeOut').classList.add('out');
@@ -15,32 +16,30 @@ function diminuerTemps() {
   }
   setInterval(diminuerTemps, 1000)
 
+
 let buttons = document.querySelectorAll('.btn');
 
-for (let i = 0; i <buttons.length; i++){
-        buttons[i].addEventListener('click', ()=> { 
-      let player = buttons[i].innerHTML;
-      let IA = buttons[Math.floor(Math.random() * buttons.length)].innerHTML;
-      let result='';
+        for (let i = 0; i <buttons.length; i++){
+                buttons[i].addEventListener('click', ()=> { 
+            let player = buttons[i].innerHTML;
+            let IA = buttons[Math.floor(Math.random() * buttons.length)].innerHTML;
+            let result='';
 
-if (player===IA) {
-       result = 'Egalité';
-    }
-else if 
-        ((player === 'Pierre' && IA === 'Ciseaux') || 
-        (player === 'Ciseaux' && IA === 'Feuille') ||
-        (player === 'Feuille' && IA === 'Pierre')) { 
-        result = 'Gagné';
-    }
-else {
-        result = 'Perdu';
-    }
+                if (player===IA) {
+                    result = 'Egalité';
+}
+                        else if 
+                            ((player === 'Pierre' && IA === 'Ciseaux') || 
+                            (player === 'Ciseaux' && IA === 'Feuille') ||
+                            (player === 'Feuille' && IA === 'Pierre')) { 
+                            result = 'Gagné';
+}
+                        else {
+                            result = 'Perdu';
+}
 
- document.getElementById('resultat').innerHTML=  ` ${player}</br>
-IAa choisi : ${IA}</br>
-${result}
+document.getElementById('resultat').innerHTML=  ` ${player}</br>IAa choisi : ${IA}</br>${result}`;
 
-`;
 if(result=='Perdu'){
     if(document.querySelector('.pv3').classList.contains('loose')){
         if(document.querySelector('.pv2').classList.contains('loose')){
@@ -63,7 +62,6 @@ if(result=='Perdu'){
             }, '2000')
 
         }
-        
              } else { 
                 document.querySelector('.pv3').style.backgroundColor='red';
                 document.querySelector('.pv3').classList.add('loose');
@@ -97,7 +95,6 @@ if(result=='Gagné'){
                 document.querySelector('.overlayWin').classList.add('out');
             }, '2000')
         }
-        
              } else { 
                 document.querySelector('.pv1bot').style.backgroundColor='red';
                 document.querySelector('.pv1bot').classList.add('loose');

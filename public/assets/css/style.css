@@ -15,9 +15,9 @@
     height: 5%;
     font-size: 200%;
     background-color: rgba(240, 248, 255, 0);
-    position: absolute
-    
+    position: absolute;  
 }
+
 .overlayWin{
     position: absolute;
     height: 100vh;
@@ -27,7 +27,6 @@
     align-items: center;
     z-index: 3;
     transform: scale(0%);
-
 }
 
 .overlayWin div{
@@ -369,7 +368,7 @@ h1{
     animation : IAMove 1s ease-out infinite;   
 }
 
-audio {
+audio{
 
     margin-top: 43%;
     position: absolute;
