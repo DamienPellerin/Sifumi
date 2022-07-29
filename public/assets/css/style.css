@@ -1,0 +1,380 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.timer{
+    color:rgb(247, 240, 240);
+    padding-left: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    height: 5%;
+    font-size: 200%;
+    background-color: rgba(240, 248, 255, 0);
+    position: absolute
+    
+}
+.overlayWin{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    transform: scale(0%);
+
+}
+
+.overlayWin div{
+    width: 400px;
+    height: 200px;
+    font-size: 30px;
+    background-color: rgb(235, 235, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlayEgality{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    transform: scale(0%);
+}
+
+.overlayEgality div{
+    width: 400px;
+    height: 200px;
+    font-size: 30px;
+    background-color: rgb(2, 2, 2);
+    color: rgb(247, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlayLoose{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    transform: scale(0%);
+}
+
+.overlayLoose div{
+    width: 400px;
+    height: 200px;
+    font-size: 30px;
+    background-color: rgb(252, 2, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameOver{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    transform: scale(0%);
+}
+
+.gameOver div{
+    width: 100%;
+    height: 100vh;
+    font-size: 50px;
+    background-color: rgb(2, 2, 2);
+    color: rgb(247, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.in{
+    animation: overlayIn 0.5s ease forwards;
+}
+
+@keyframes overlayIn {
+    0%{
+        transform: scale(0%);
+    }
+
+    50%{
+        transform: scale(0%);
+    }
+
+    100%{
+        transform: scale(100%);
+    }
+}
+
+.in{
+    animation: overlayIn 0.5s ease forwards;
+}
+
+@keyframes overlayIn {
+    100%{
+        transform: scale(100%);
+    }
+
+    50%{
+        transform: scale(0%);
+    }
+
+    0%{
+        transform: scale(0%);
+    }
+}
+
+.timeOut{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    transform: scale(0%);
+}
+
+.timeOut div{
+    width: 100%;
+    height: 100vh;
+    font-size: 50px;
+    background-color: rgb(2, 2, 2);
+    color: rgb(247, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.winner{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    transform: scale(0%);
+}
+
+.winner div{
+    width: 100%;
+    height: 100vh;
+    font-size: 50px;
+    background-color: rgb(2, 2, 2);
+    color: rgb(247, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inTimeOut{
+    animation: overlayIn 1s ease forwards; 
+}
+
+.inGameOver{
+    animation: overlayIn 1s ease forwards;
+}
+
+img{
+    width: 10%;
+    height: 10%;
+}
+
+.inWinner{
+    animation: overlayIn 1s ease forwards;
+}
+
+.life {
+    height: 20%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lifePlayer{
+    width: 40%;
+    height: 15%;
+    /* border-radius: 15%; */
+    border-style: solid;
+    border-color: rgb(180, 180, 180);
+    display: flex;
+} 
+
+.pv1,
+.pv2,
+.pv1bot,
+.pv2bot{
+    width: 33%;
+    height: 100%;
+    background-color: rgb(235, 235, 5); 
+}
+
+.pv3,
+.pv3bot{
+    width: 34%;
+    height: 100%;
+    background-color: rgb(235, 235, 5); 
+}
+
+.lifeIA{
+    width: 40%;
+    height: 15%;
+    /* border-radius: 15%; */
+    border-style: solid;
+    border-color: rgb(180, 180, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/CPT0.jpg");
+    background-size: cover;
+    position: absolute;
+    flex-wrap: wrap;
+}
+
+.title{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+h1{
+    padding-top: 5%;
+    position: relative;
+    color: rgb(248, 252, 5);
+    font-weight: bolder;
+    text-shadow: 6px 6px rgba(252, 2, 2, 0.849);
+}
+
+.box{
+    display: flex;
+    width: 80%;
+    height: 20%;
+    position: relative; 
+    justify-content: center;
+    text-align: center;
+}
+
+.btn{
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.img1{
+    width: 40%;
+    height: 50%;
+}
+
+#resultat{
+    display: none;
+}
+
+.ring{
+    height: 40%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.player{
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-image: url("../img/ryu2.png");
+    background-size:contain;
+    animation : playerMove 1.2s ease-out infinite; 
+    
+}
+
+@keyframes playerMove {
+    0%{
+        transform: translate(0%, 0%);
+        
+    }
+    30%{
+        transform: translate(10%, -10%);
+    }
+
+    50%{
+        transform: translate(20%, 0%);
+    }
+   
+    70%{
+        transform: translate(10%, -10%);
+    }
+    
+    100%{
+        transform: translate(0%,0%);
+        
+    }
+}
+
+@keyframes IAMove {
+    0%{
+        transform: translate(0%, 0%);
+        
+    }
+    30%{
+        transform: translate(-10%, -10%);
+    }
+
+    50%{
+        transform: translate(-20%, 0%);
+    }
+   
+    70%{
+        transform: translate(-10%, -10%);
+    }
+    
+    100%{
+        transform: translate(0%,0%);
+        
+    }
+}
+
+.IA{
+    height: 100%;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-image: url("../img/ken.png"); 
+    background-size: contain;
+    animation : IAMove 1s ease-out infinite;   
+}
+
+audio {
+
+    margin-top: 43%;
+    position: absolute;
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 20%;
+    height: 10%;
+    opacity: 10%   
+}

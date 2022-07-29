@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\public\assets\css\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>SHI-FU-MI FIGHTER</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="title"><h1>SHI-FU-MI FIGHTER</h1></div>
+     
+<div class="life">
+    <div class="lifePlayer"><div class="pv1"></div><div class="pv2"></div><div class="pv3"></div></div>
+    <div class="timer"></div>
+    <div class="lifeIA"><div class="pv1bot"></div><div class="pv2bot"></div><div class="pv3bot"></div></div>
+</div>    
+<div class="box">
+        
+        <div class="btn"><img class="img1"src="\public\assets\img\pierre1.png" alt=""></div>
+        <div class="btn"><img class="img1" src="\public\assets\img\feuille.png" alt=""></div>
+        <div class="btn"><img class="img1" src="\public\assets\img\les-ciseaux.png" alt=""></div>
+
+        <div id="resultat"></div>
+</div>
+    <div class="ring">
+
+        <div class="player" ></div>
+    
+        <div class="IA" ></div>
+    </div>
+
+    <div class="overlayWin"><div>YOU WIN</div></div>
+    <div class="overlayEgality"><div>EGALITY</div></div>
+    <div class="overlayLoose"><div>YOU LOOSE</div></div>
+    <div class="gameOver"><div>GAME OVER</div></div>
+    <div class="winner"><div>WINNER</div></div>
+    <div class="timeOut"><div>TIME OUT</div></div>
+
+</div> 
+   <audio controls preload="auto" autoplay="auto"  src=".\audio\combat.mp3" ></audio>
+    <script src=".\public\assets\js\script.js"></script>
+
+</body>
+</html>

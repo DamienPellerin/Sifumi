@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+}
+.fleche{
+    width: 30%;
+}
+.next{
+    position: absolute;
+    padding-left: 90%;
+    
+}
+
+.title{
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h1{
+    width: 40%;
+    position: relative;
+    color: rgb(248, 252, 5);
+    font-weight: bolder;
+    text-shadow: 6px 6px rgba(252, 2, 2, 0.849);
+    text-align: center;
+}
+.content{
+    height: 80vh;
+    width: 100%;
+    background-color:black;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.button{
+    width: 10%;
+    height: 10%;
+    padding-right: 10%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    margin: 10px 0px 10px 20px;
+   
+}
+
+.perso1,
+.perso2,
+.perso3,
+.perso4{
+    height: 90px;
+    width: 380px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+    border: 2px solid white;
+    transition: 0.2s;
+    cursor: pointer;
+    
+   
+}
+
+ .perso1:hover,
+ .perso2:hover,
+ .perso3:hover,
+ .perso4:hover{
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px white, 0px 0px 10px white;
+}
+
+.perso1 .left{
+    height: 100%;
+    width: 80px;
+    background-color: black;
+    background-image: url("../img/vega.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.perso2 .left{
+    height: 100%;
+    width: 80px;
+    background-color: black;
+    background-image: url("../img/sagat.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.perso3 .left{
+    height: 100%;
+    width: 80px;
+    background-color: black;
+    background-image: url("../img/ryu2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.perso4 .left{
+    height: 100%;
+    width: 80px;
+    background-color: black;
+    background-image: url("../img/ken.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    
+}
+.menu:nth-child(1) .perso1 .left {
+    background-image: url("../img/vega.gif");
+    background-size: cover;
+    
+}
+
+.menu:nth-child(2) .perso2 .left {
+    background-image: url("../img/sagat.gif");
+    background-size: cover;
+}
+
+.menu:nth-child(3) .perso3 .left {
+    background-image: url("../img/ryu2.png");
+    background-size: cover;
+}
+
+.menu:nth-child(4) .perso4 .left {
+    background-image: url("../img/ken.png");
+    background-size: cover;
+}
+
+.perso .right h2{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.perso-bg {
+    position: absolute;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    top: 0;
+    left: 20%;
+}
+
+audio {
+    
+    position: relative;
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 20%;
+    height: 10%;
+    opacity: 5%;
+}
+

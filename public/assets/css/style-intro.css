@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fleche{
+    width: 20%;
+}
+.next{
+    color: aliceblue;
+    position: absolute;
+    padding-left: 90%;
+    padding-top: 5%;
+}
+ .intro{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   position: relative; 
+   background-size: cover;  
+   background-color: black;
+   justify-content: center;
+}
+
+audio {
+    margin-top: 43%;
+    position: absolute;
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 20%;
+    height: 10%;
+    opacity: 5%
+    
+}
