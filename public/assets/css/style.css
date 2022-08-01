@@ -372,7 +372,6 @@ audio{
 
     margin-top: 43%;
     position: absolute;
-    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
     width: 20%;
     height: 10%;
     opacity: 10%   
