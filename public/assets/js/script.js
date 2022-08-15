@@ -113,7 +113,7 @@ if(result=='Gagné'){
                     document.querySelector('.overlayEgality').classList.add('out');
                 }, '2000')
     }
-}
+} 
 
 
 )}

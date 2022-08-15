@@ -21,7 +21,7 @@ let perso4 = document.querySelector('.perso4');
 perso4.addEventListener('click' ,function(){
     document.querySelector('.perso-bg').innerHTML='<img src="./public/assets/img/ken.png" alt="perso4" height="40%">';       
 })
-
+ 
 
 
 

@@ -198,7 +198,7 @@ img{
 }
 
 .inWinner{
-    animation: overlayIn 1s ease forwards;
+    animation: overlayIn 1s ease forwards; 
 }
 
 .life {
